@@ -1,0 +1,3 @@
+docker build -t gyemoo/fastapi-server:1.2 .
+docker run --env-file .env -p 80:8000 --name fastapi-server --rm -d gyemoo/fastapi-server:1.2 
+docker push gyemoo/fastapi-server:1.2
